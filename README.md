@@ -1,1 +1,1 @@
-# mongopaginator
+# mongodb-paginator
