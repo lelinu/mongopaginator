@@ -1,4 +1,4 @@
-# mongodb-paginator
+# mongodpaginator
 
 Mongodb paginator is a wrapper package to load records via mongodb with pagination
 
@@ -15,8 +15,8 @@ import "github.com/lelinu/mongopaginator"
 
     paginator := Init("OrderByField", 1, 1)
     collection := dbSession.C("testcollection")
-	output := paginator.Paginate(collection, nil, &docs)
+    output := paginator.Paginate(collection, nil, &docs)
 
-	returnedDocs := output.Records.(*[]TestDocument)
+    returnedDocs := output.Records.(*[]TestDocument)
     fmt.Printf("Returned docs are %v", returnedDocs)
 ```
