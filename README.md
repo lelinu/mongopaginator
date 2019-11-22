@@ -1,4 +1,4 @@
-# mongodpaginator
+# mongopaginator
 
 Mongodb paginator is a wrapper package to load records via mongodb with pagination
 
