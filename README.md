@@ -9,14 +9,15 @@ Requires Go 1.12 or newer.
 ### Simple initialization
 
 ```go
+
 import "github.com/lelinu/mongopaginator"
 
-    var docs []TestDocument
+var docs []TestDocument
 
-    paginator := Init("OrderByField", 1, 1)
-    collection := dbSession.C("testcollection")
-    output := paginator.Paginate(collection, nil, &docs)
+paginator := Init("OrderByField", 1, 1)
+collection := dbSession.C("testcollection")
+output := paginator.Paginate(collection, nil, &docs)
 
-    returnedDocs := output.Records.(*[]TestDocument)
-    fmt.Printf("Returned docs are %v", returnedDocs)
+returnedDocs := output.Records.(*[]TestDocument)
+fmt.Printf("Returned docs are %v", returnedDocs)
 ```
